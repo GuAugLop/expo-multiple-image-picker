@@ -1,4 +1,4 @@
-import React, { JSXElementConstructor } from 'react';
+import React, { JSXElementConstructor, MutableRefObject } from 'react';
 import { Asset, MediaTypeValue } from 'expo-media-library';
 import { StyleProp, TextStyle, ViewStyle } from 'react-native';
 
@@ -11,6 +11,17 @@ export type AssetSelectorPropTypes = {
   Navigator?: NavigatorType;
   Resize?: ResizeType;
   CustomNavigator?: CustomNavigator;
+};
+
+export type ImageMultiplePickerPropTypes = {
+  setSelectedAssets: (value: string[]) => void;
+  selectedAssets: string[];
+  confirmButtonColor?: string;
+  confirmIconColor?: string;
+  confirmCallback?: (value: boolean) => void;
+  
+  max?: number
+  min?: number
 };
 
 export type ResizeType = {

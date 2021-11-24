@@ -1,26 +1,23 @@
 {
-  "main": "node_modules/expo/AppEntry.js",
-  "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web",
-    "eject": "expo eject"
+  "name": "expo-multiple-image-picker",
+  "version": "1.0.0",
+  "description": "Expo images picker, Selecting Multiple images and videos from user device",
+  "main": "src/index.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GuAugLop/expo-multiple-image-picker.git"
+  },
+  "author": "GustavoLopes",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "*",
+    "expo": ">=43.0.0",
+    "react-native": "*"
   },
   "dependencies": {
-    "@heroicons/react": "^1.0.5",
-    "expo": "~43.0.2",
-    "expo-image-manipulator": "~10.1.2",
     "expo-media-library": "~13.0.3",
-    "expo-permissions": "~13.0.3",
-    "expo-status-bar": "~1.1.0",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
-    "react-native": "0.64.3",
-    "react-native-gesture-handler": "~1.10.2",
     "react-native-heroicons": "^2.0.2",
-    "react-native-svg": "^12.1.1",
-    "react-native-web": "0.17.1"
+    "react-native-svg": "^12.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
