@@ -28,7 +28,7 @@ const ImageMultiplePicker: React.FC<ImageMultiplePickerPropTypes> = ({
   const getPhotos = React.useCallback(
     async (after) => {
       try {
-        if ((await MediaLibrary.getPermissionsAsync()).status !== 'granted') {
+        if ((await MediaLibrary.requestPermissionsAsync()).status !== 'granted') {
           throw new Error('Permission not agreed');
         }
         if (!next) {
